@@ -2,10 +2,11 @@ import moment from 'moment'
 import Link from 'next/link'
 import React from 'react'
 
-const BlogItem =  ({post}) => {
+const HomeBlogItem =  ({post}) => {
   let coverImage = post.fields.coverImage?.fields.file.url
   return (
-    <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+    // <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+    <div className="col-xl-11 col-lg-11 col-md-12 col-sm-12">
         <div className="blog_box type_two trans hover_1_get">
           <div className="blog_inner trans">
             <div className="image_box trans hover_1">
@@ -42,4 +43,4 @@ const BlogItem =  ({post}) => {
   )
 }
 
-export default BlogItem
+export default HomeBlogItem

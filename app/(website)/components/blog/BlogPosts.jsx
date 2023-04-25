@@ -1,7 +1,17 @@
 import React from 'react'
 import BlogItem from './BlogItem'
+import client from '@/app/lib/contentful/client'
 
-const BlogPosts = () => {
+const getBlogPosts = async () => {
+  const entries = await client.getEntries({
+    content_type: 'posts'
+  })
+  if (entries.items) return entries.items
+  console.log(`Error getting Entries for ${contentType.name}.`)
+}
+
+const BlogPosts = async () => {
+  let posts = await getBlogPosts()
   return (
    <section className="blog_post position-relative">
   {/*-============spacing==========-*/}
@@ -9,7 +19,7 @@ const BlogPosts = () => {
   {/*-============spacing==========-*/}
   <div className="container">
     <div className="row">
-      <BlogItem/>
+      {posts.map(post=><BlogItem key={post.sys.id} post={post} />)}
     </div>
     <div className="row">
       <div className="col-lg-12">

@@ -6,8 +6,8 @@ import Footer from "./components/app/Footer";
 import FooterCTA from "./components/app/FooterCTA";
 import MobileMenu from "./components/app/MobileMenu";
 import ProgressBar from "./components/app/ProgressBar";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
+import 'moment-timezone';
+
 export const metadata = {
   title: "IM Properties | Property Development & Management",
   description:

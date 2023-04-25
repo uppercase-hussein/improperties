@@ -1,7 +1,16 @@
 import Link from 'next/link'
 import React from 'react'
+import client from '@/app/lib/contentful/client'
 
-const Footer = () => {
+const getBlogPosts = async () => {
+  const entries = await client.getEntries({
+    content_type: 'posts'
+  })
+  if (entries.items) return entries.items
+  console.log(`Error getting Entries for ${contentType.name}.`)
+}
+const Footer = async () => {
+  let posts = await getBlogPosts()
   return (
     <footer className="footer style_one style_five">
   <section className="md_content position-relative z_99">
@@ -92,7 +101,7 @@ const Footer = () => {
                     <div className="icon trans">
                       <i className="fi-rr-arrow-small-right color_white" />
                     </div>
-                    <Link className="links color_white" href="/properties">
+                    <Link className="links color_white" href="/our-properties">
                       Properties
                     </Link>
                   </div>
@@ -141,60 +150,31 @@ const Footer = () => {
               {/*-============spacing==========-*/}
             </div>
             <section className="post_foo_box">
-              <div className="foo_post_content">
-                <a className="image_box trans" href="blog.html">
-                  <img className="img-fluid trans" src="assets/images/blog/blog-9-min.png" alt="blog" />
+                {
+                  posts.map((post, index) => {
+                    let {title, coverImage, slug} = post.fields
+                   if(index < 3) return (
+                      <div className="foo_post_content">
+                <Link href={`/post?title=${slug}&ref=${post.sys.id}`} className="image_box trans" >
+                  <img className="img-fluid trans" src={coverImage?.fields.file.url} alt="blog" />
                   <svg className="trans" width={55} height={55} viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx={28} cy={27} r={20} fill="white" />
                     <circle cx="27.5" cy="27.5" r="27.5" fill="white" fillOpacity="0.1" />
                     <path d="M22 33.25L33.25 22M33.25 22H24.8125M33.25 22V30.4375" stroke="#2D947A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
-                </a>
+                </Link>
                 <div className="content">
                   <h4 className="title_18">
-                    <a href="blog.html" className="color_white">
-                      Former insures only the marine perils
-                    </a>
+                  <Link href={`/post?title=${slug}&ref=${post.sys.id}`} className="color_white">
+                    {title}
+                    </Link>
                   </h4>
-                  <p className="color_white"> Bradley R Grady </p>
+                  {/* <p className="color_white"> Bradley R Grady </p> */}
                 </div>
               </div>
-              <div className="foo_post_content">
-                <a className="image_box trans" href="blog.html">
-                  <img className="img-fluid trans" src="assets/images/blog/blog-8-min.png" alt="blog" />
-                  <svg className="trans" width={55} height={55} viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx={28} cy={27} r={20} fill="white" />
-                    <circle cx="27.5" cy="27.5" r="27.5" fill="white" fillOpacity="0.1" />
-                    <path d="M22 33.25L33.25 22M33.25 22H24.8125M33.25 22V30.4375" stroke="#2D947A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                </a>
-                <div className="content">
-                  <h4 className="title_18">
-                    <a href="blog.html" className="color_white">
-                      Insurance covers risk of fire absence
-                    </a>
-                  </h4>
-                  <p className="color_white"> Jason P Laforce </p>
-                </div>
-              </div>
-              <div className="foo_post_content">
-                <a className="image_box trans" href="blog.html">
-                  <img className="img-fluid trans" src="assets/images/blog/blog-7-min.png" alt="blog" />
-                  <svg className="trans" width={55} height={55} viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx={28} cy={27} r={20} fill="white" />
-                    <circle cx="27.5" cy="27.5" r="27.5" fill="white" fillOpacity="0.1" />
-                    <path d="M22 33.25L33.25 22M33.25 22H24.8125M33.25 22V30.4375" stroke="#2D947A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                </a>
-                <div className="content">
-                  <h4 className="title_18">
-                    <a href="blog.html" className="color_white">
-                      Erving the interests of our clients
-                    </a>
-                  </h4>
-                  <p className="color_white"> Bradley R Grady </p>
-                </div>
-              </div>
+                      )
+                        })
+                }
             </section>
           </div>
         </div>
