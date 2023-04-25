@@ -1,9 +1,32 @@
 
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
-import { BLOCKS } from '@contentful/rich-text-types'
+import { BLOCKS, MARKS } from '@contentful/rich-text-types'
+
+const Bold = ({ children }) => <span className="bold">{children}</span>;
+const Text = ({ children }) => <p className="align-center">{children}</p>;
 
 const BlogBody = ({post}) => {
     let mainImage = post.fields.mainImage[0]?.fields.file.url
+
+const options = {
+  renderMark: {
+    [MARKS.BOLD]: text => <Bold>{text}</Bold>,
+  },
+  renderNode: {
+    [BLOCKS.PARAGRAPH]: (node, children) => <Text>{children}</Text>,
+    [BLOCKS.EMBEDDED_ASSET]: node => {
+      return (
+        <>
+          <h2>Embedded Asset</h2>
+          <pre>
+            <code>{JSON.stringify(node, null, 2)}</code>
+          </pre>
+        </>
+      )
+    },
+  },
+}
+
   return (
    <section className="blog-detail-section">
   {/*-============spacing==========-*/}
@@ -20,7 +43,7 @@ const BlogBody = ({post}) => {
             <div className="post_single_content">
              
             {/* Post Body */}
-            {documentToReactComponents(post.fields.body, {})}
+            {documentToReactComponents(post.fields.body, options)}
 
             </div>
           </div>

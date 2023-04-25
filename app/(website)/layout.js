@@ -144,43 +144,13 @@ export default function RootLayout({ children }) {
           <ProgressBar />
         </div>
 
-        <script
-          type="text/javascript"
-          src=""
-        ></script>
+       
+        <script type='text/javascript' src='assets/js/plugins/jquery.min.js'></script>
         <script
           type="text/javascript"
           src="assets/js/plugins/bootstrap.bundle.min.js"
         ></script>
-        <script
-          type="text/javascript"
-          src="assets/js/plugins/appear.js"
-        ></script>
-        <script
-          type="text/javascript"
-          src="assets/js/plugins/TweenMax.min.js"
-        ></script>
-        <script
-          type="text/javascript"
-          src="assets/js/plugins/waypoints.js"
-        ></script>
-        <script
-          type="text/javascript"
-          src="assets/js/plugins/select.min.js"
-        ></script>
-        <script
-          type="text/javascript"
-          src="assets/js/plugins/jquery.fancybox.js"
-        ></script>
-        <script
-          type="text/javascript"
-          src="assets/js/plugins/isotope.min.js"
-        ></script>
-        <script type="text/javascript" src="assets/js/plugins/owl.js"></script>
-        <script
-          type="text/javascript"
-          src="assets/js/plugins/sharer.js"
-        ></script>
+       
         <script
           type="text/javascript"
           src="assets/js/plugins/rangeslider.min.js"
@@ -189,15 +159,6 @@ export default function RootLayout({ children }) {
           type="text/javascript"
           src="assets/js/plugins/counterup.js"
         ></script>
-        <script
-          type="text/javascript"
-          src="assets/js/plugins/slick.js"
-        ></script>
-        <script type="text/javascript" src="include/validator.min.js"></script>
-        <script type="text/javascript" src="include/contact.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-CE0deH3Jhj6GN4YvdCFZS7DpbXexzGU"></script>
-        <script src="assets/js/gmaps.js"></script>
-        <script src="assets/js/map-helper.js"></script>
         {/* <script type='text/javascript' src='assets/js/main.js'></script> */}
         <script type="text/javascript" src="assets/js/custom.js"></script>
       </body>

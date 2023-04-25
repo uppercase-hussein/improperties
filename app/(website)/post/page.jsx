@@ -5,7 +5,6 @@ import Hero from '../components/app/Hero'
 
 const SingleBlog = async ({searchParams}) => {
   const {ref} = searchParams
-  console.log(ref)
   let post = await client.getEntry(ref)
   let { title, coverImage,  } = post.fields
    coverImage = coverImage?.fields.file.url

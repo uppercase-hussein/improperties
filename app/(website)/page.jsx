@@ -5,6 +5,7 @@ import BlogSection from './components/home/BlogSection'
 import Clients from './components/home/Clients'
 import FactVideo from './components/home/FactVideo'
 import InterestForm from './components/home/InterestForm'
+import PropertiesSection from './components/home/PropertiesSection'
 import Services from './components/home/Services'
 import Slider from './components/home/Slider'
 import Team from './components/home/Team'
@@ -18,8 +19,9 @@ export default function HomePage() {
      <About/>
      <Services/>
      <Benefits/>
-     <Team/>
+     <PropertiesSection/>
      <InterestForm/>
+     <Team/>
      <FactVideo/>
      {/* <Clients/> */}
      <BlogSection/>

@@ -10,7 +10,7 @@ const InterestForm = () => {
         <div className="section_title text-center type_one">
           <h4 className="sm_title"> What type of property are you interested in?</h4>
           <div className="title_whole">
-            <h2 className="title"> Find Your Dream Property Today!</h2>
+            <h2 className="title"> Let Us Know What You Have In Mind</h2>
           </div>
         </div>
       </div>
