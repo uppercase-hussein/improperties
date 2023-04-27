@@ -159,7 +159,7 @@ export default function RootLayout({ children }) {
           type="text/javascript"
           src="assets/js/plugins/counterup.js"
         ></script>
-        {/* <script type='text/javascript' src='assets/js/main.js'></script> */}
+        <script type='text/javascript' src='assets/js/main.js'></script>
         <script type="text/javascript" src="assets/js/custom.js"></script>
       </body>
     </html>
