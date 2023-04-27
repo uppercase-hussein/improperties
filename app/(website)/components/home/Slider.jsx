@@ -3,7 +3,7 @@ import Link from 'next/link'
 import React from 'react'
 import Slider from 'react-slick'
 
-const PageSlider = () => {
+const PageSlider = ({slides}) => {
   let settings = {
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -14,10 +14,38 @@ const PageSlider = () => {
     swipe:true,
     swipeToSlide:true,
   }
+
+  // console.log(slides)
   return (
     <div className="slider style_five">
   <Slider {...settings}>
-    <div className="slide-item-content">
+    {
+      slides.map((slide, index) => {
+        return (
+          <div key={index} className="slide-item-content">
+            <div className="image-layer" style={{backgroundImage: `url(${slide.fields.image.fields.file.url})`}} />
+            <div className="slide-item content_left">
+              <div className="auto-container">
+                <div className="row align-items-center">
+                  <div className="col-md-12 text-center">
+                    <div className="slider_content">
+                      <h6 className="animate_up mb-5">
+                        {slide.fields.subtitle}
+                      </h6>
+                      <h1 className="animate_left">{slide.fields.ttile}</h1>
+                      <div className="button_all animate_down">
+                        <Link href="/contact-us" className="theme_btn color_white  animated">{slide.fields.ctaText}</Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        )
+      })
+    }
+    {/* <div className="slide-item-content">
       <div className="image-layer" style={{backgroundImage: 'url(assets/images/slider/slider1.jpg)'}} />
       <div className="slide-item content_left">
         <div className="auto-container">
@@ -100,26 +128,8 @@ const PageSlider = () => {
           </div>
         </div>
       </div>
-    </div>
+    </div> */}
     </Slider>
-  <div className="tab_postion_absolute">
-    <div className="container">
-      <div className="slider tab_slick">
-        {/* <div className="title">
-          <h3>Land Sale</h3>
-        </div>
-        <div className="title">
-          <h3>Propery Development</h3>
-        </div>
-        <div className="title">
-          <h3>Property Management</h3>
-        </div>
-        <div className="title">
-          <h3>Building construction</h3>
-        </div> */}
-      </div>
-    </div>
-  </div>
 </div>
 
 
