@@ -141,7 +141,7 @@ export default function RootLayout({ children }) {
             <Footer />
           </div>
           <MobileMenu />
-          <ProgressBar />
+          {/* <ProgressBar /> */}
         </div>
 
        
