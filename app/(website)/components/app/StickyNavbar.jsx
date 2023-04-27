@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import HamburgerBtn from "./HamburgerBtn";
 import NavList from "./NavList";
 
 const StickyNavbar = () => {
@@ -29,11 +30,7 @@ const StickyNavbar = () => {
               <div className="col-xl-2 col-lg-3 col-md-7 col-sm-7 col-xs-7 nav_tog_column">
                 <div className="d-flex right_content align-items-center">
                   {/*menu icon*/}
-                  <div className="navbar_togglers hamburger_menu">
-                    <span className="line" />
-                    <span className="line" />
-                    <span className="line" />
-                  </div>
+                  <HamburgerBtn/>
                   {/*menu icon*/}
                   <div className="button">
                     <Link href="/become-an-esp" className="theme_btn">
