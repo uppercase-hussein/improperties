@@ -24,7 +24,7 @@ const PageSlider = () => {
           <div className="row align-items-center">
             <div className="col-md-12 text-center">
               <div className="slider_content">
-                <h6 className="animate_up">
+                <h6 className="animate_up mb-5">
                 Land Sale
                 </h6>
                 <h1 className="animate_left">Your Gateway to Building  <br />
@@ -45,7 +45,7 @@ const PageSlider = () => {
           <div className="row align-items-center">
             <div className="col-md-12 text-center">
               <div className="slider_content">
-                <h6 className="animate_up">
+                <h6 className="animate_up mb-5">
                   Property Development
                 </h6>
                 <h1 className="animate_left"> Unlocking Your Property's  <br />
@@ -66,7 +66,7 @@ const PageSlider = () => {
           <div className="row align-items-center">
             <div className="col-md-12 text-center">
               <div className="slider_content">
-                <h6 className="animate_up">
+                <h6 className="animate_up mb-5">
                 Property Management
                 </h6>
                 <h1 className="animate_left">Let Us Take Care Of <br />
@@ -87,7 +87,7 @@ const PageSlider = () => {
           <div className="row align-items-center">
             <div className="col-md-12 text-center">
               <div className="slider_content">
-                <h6 className="animate_up">
+                <h6 className="animate_up mb-5">
                 Building construction
                 </h6>
                 <h1 className="animate_left"> Building Your Vision  <br />

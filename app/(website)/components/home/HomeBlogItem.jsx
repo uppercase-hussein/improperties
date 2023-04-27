@@ -10,9 +10,9 @@ const HomeBlogItem =  ({post}) => {
         <div className="blog_box type_two trans hover_1_get">
           <div className="blog_inner trans">
             <div className="image_box trans hover_1">
-              <a href="blog-details.html">
+            <Link href={`/post?title=${post.fields.slug}&ref=${post.sys.id}`}>
                 <img src={coverImage} className="img-fluid" alt="img" />
-              </a>
+              </Link>
               <div className="oh ho_1" />
               <div className="oh ho_2" />
               <div className="oh ho_3" />

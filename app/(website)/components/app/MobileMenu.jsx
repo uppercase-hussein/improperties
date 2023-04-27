@@ -20,7 +20,7 @@ const MobileMenu = () => {
             <li><Link onClick={closeMenu} href="/">Home</Link></li>
             <li><Link onClick={closeMenu} href="/about-us">About us</Link></li>
             <li><Link onClick={closeMenu} href="/services">What we do</Link></li>
-            <li><Link onClick={closeMenu} href="/properties">Properties</Link></li>
+            <li><Link onClick={closeMenu} href="/our-properties">Properties</Link></li>
             <li><Link onClick={closeMenu} href="/blog">Blog</Link></li>
             <li><Link onClick={closeMenu} href="/our-team">Our team</Link></li>
             <li><Link onClick={closeMenu} href="/contact-us">Contact us</Link></li>

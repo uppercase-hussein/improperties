@@ -1,4 +1,5 @@
 import client from "@/app/lib/contentful/client";
+import Link from "next/link";
 import SinglePropertySec from "./SinglePropertySec";
 
 
@@ -35,6 +36,11 @@ const PropertiesSection = async () => {
       <div className="row">
         <SinglePropertySec properties={properties} />
       </div>
+      <div className="theme_btn_all text-center mt-3">
+              <Link href="/our-properties" className="theme_btn rotate big">
+                See More Properties
+              </Link>
+            </div>
     </div>
     {/*-============spacing==========-*/}
     <div className="pd_bottom_80" />

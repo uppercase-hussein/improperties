@@ -17,9 +17,9 @@ export default function HomePage() {
     <>
     <Slider/>
      <About/>
+     <PropertiesSection/>
      <Services/>
      <Benefits/>
-     <PropertiesSection/>
      <InterestForm/>
      <Team/>
      <FactVideo/>

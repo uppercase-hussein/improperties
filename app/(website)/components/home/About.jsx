@@ -86,11 +86,60 @@ const About = () => {
         {/*-============spacing==========-*/}
         <div className="pd_bottom_20" />
         {/*-============spacing==========-*/}
-        <div className="position-relative">
+        {/* <div className="position-relative">
         At IM Properties, we pride ourselves on being a leading player in the real estate industry. We are dedicated to providing our clients with top-notch land sales, property management, and development services that are tailored to meet their unique needs. 
         </div>
         <div className="position-relative">
         We are committed to providing you with the highest level of service and professionalism so, whether you're looking to buy, sell, or develop property, we have the expertise and experience to guide you every step of the way.  
+        </div> */}
+         <div className="fom_tab_box custom_tabs only_tab_content">
+          <ul className="nav nav-tabs links trans" role="tablist">
+            <li className="nav-item">
+              <button className="nav-link active" id="aboutuss-tabtab" data-bs-toggle="tab" data-bs-target="#aboutuss" type="button" role="tab" aria-controls="aboutuss" aria-selected="false">
+                Core Values <svg width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 11L11 1M11 1H3.5M11 1V8.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </button>
+            </li>
+           
+            <li className="nav-item">
+              <button className="nav-link " id="vision-tabtab" data-bs-toggle="tab" data-bs-target="#vision" type="button" role="tab" aria-controls="vision" aria-selected="false">
+                Vision <svg width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 11L11 1M11 1H3.5M11 1V8.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </button>
+            </li>
+
+            <li className="nav-item">
+              <button className="nav-link " id="mission-tabtab" data-bs-toggle="tab" data-bs-target="#mission" type="button" role="tab" aria-controls="mission" aria-selected="false">
+                Mission <svg width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 11L11 1M11 1H3.5M11 1V8.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </button>
+            </li>
+          </ul>
+          <div className="s_tabs_content tab-content">
+            <div className="tab-pane  active" id="aboutuss" role="tabpanel" aria-labelledby="aboutuss-tabtab">
+              <div className="tab_content_box">
+                <div className="content">
+                We are committed to providing you with the highest level of service and professionalism so, whether you're looking to buy, sell, or develop property, we have the expertise and experience to guide you every step of the way. </div>
+              </div>
+            </div>
+           
+            <div className="tab-pane  " id="vision" role="tabpanel" aria-labelledby="vision-tabtab">
+              <div className="tab_content_box">
+                <div className="content">
+                To be the no.1 real estate company in sub-sahara Africa and the world.</div>
+              </div>
+            </div>
+
+            <div className="tab-pane  " id="mission" role="tabpanel" aria-labelledby="mission-tabtab">
+              <div className="tab_content_box">
+                <div className="content">
+                To bring the real estate dream of many into reality with our total commitment to affordable housing and multi payment plans and support. </div>
+              </div>
+            </div>
+          </div>
         </div>
         {/*-============spacing==========-*/}
         <div className="pd_bottom_40" />
@@ -131,7 +180,7 @@ const About = () => {
           <div className="col-lg-6 col-md-12">
             <div className="fun_facts type_one with_box_shadow">
               <h4>
-                <span className="count">728</span>
+                <span className="count">1593</span>
                 <small>
                   + </small></h4>
               <h6 className="title_no_a_18">Satisfied Customer</h6>

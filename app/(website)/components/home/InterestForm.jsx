@@ -3,7 +3,7 @@ import InterestFormComponent from './InterestFormComponent'
 
 const InterestForm = () => {
   return (
-   <section className="form-section">
+   <section className="form-section mt-5">
   <div className="container">
     <div className="row">
       <div className="col-lg-12">
