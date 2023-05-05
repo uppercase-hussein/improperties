@@ -1,9 +1,19 @@
 import client from '@/app/lib/contentful/client'
 import { displayAmount } from '@/app/utils/helpers'
+import InterestBtn from '../components/properties/InterestBtn'
+
+const getProperties = async () => {
+  const entries = await client.getEntries({
+    content_type: 'properties'
+  })
+  if (entries.items) return entries.items
+  console.log(`Error getting Entries for ${contentType.name}.`)
+}
 
 const SingleProperty = async ({searchParams}) => {
     const {ref} = searchParams
-    let property = await client.getEntry(ref)
+    const property = await client.getEntry(ref)
+    const properties = await getProperties()
     let { name, location, features, image, price, instalment3, instalment6, instalment12  } = property.fields
     image = image?.fields.file.url
   return (
@@ -69,12 +79,18 @@ const SingleProperty = async ({searchParams}) => {
             </li>
           </ul>
         </div>
+
+        <div className="pd_bottom_30" />
+
+            <InterestBtn propertyName={name} id={ref} properties={properties} />
         {/*-============spacing==========-*/}
         <div className="pd_bottom_30" />
         {/*-============spacing==========-*/}
         <div className="section_title type_one">
           <p> Please note that terms and conditions apply when paying with installment payments. These terms and conditions will be clearly outlined in your payment agreement, and we encourage you to review them carefully before making a purchase. If you have any questions or concerns about our installment payment options, please don't hesitate to contact us for more information</p>
         </div>
+
+       
         {/*-============spacing==========-*/}
         <div className="pd_bottom_30" />
         {/*-============spacing==========-*/}

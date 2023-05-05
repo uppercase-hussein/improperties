@@ -1,0 +1,41 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+
+//create a mongoDB collection called "Interest"
+model Interest {
+  id        String    @id @default(auto()) @map("_id") @db.ObjectId
+  name      String
+  email     String
+  phone     String?
+  address   String?
+  country   String?
+  state     String?
+  city       String?
+  propertyName String
+  propertyPrice Int
+  TotalPrice Int
+  message   String?
+  quantity  Int
+  installments Installments
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+
+
+enum Installments {
+  FULL
+  MONTHS3
+  MONTHS6
+  MONTHS12
+}

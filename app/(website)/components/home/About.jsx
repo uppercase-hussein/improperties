@@ -65,11 +65,10 @@ const About = () => {
           </div>
           <div className="fun_facts type_two" style={{backgroundColor:"#f90a0ce6"}}>
             <h4>
-              <span className="count">5</span>
+              <span className="count">48</span>
               <small>
                 + </small></h4>
-            <h6 className="title_no_a_26">Years Of
-              Experience</h6>
+            <h6 className="title_no_a_26">Estates Available</h6>
           </div>
           <div className="m_image">
             <img src="assets/images/about1.webp" alt="img" className="img-fluid" />

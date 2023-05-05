@@ -9,6 +9,7 @@ import Services from './components/home/Services'
 import Slider from './components/home/Slider'
 import Team from './components/home/Team'
 import client from "@/app/lib/contentful/client";
+import Testimonials from './components/home/Testimonials'
 
 const getSlides = async () => {
     const entries = await client.getEntries({
@@ -27,10 +28,11 @@ export default async function HomePage() {
      <PropertiesSection/>
      <Services/>
      <Benefits/>
-     <InterestForm/>
+     {/* <InterestForm/> */}
      <Team/>
      <FactVideo/>
-     {/* <Clients/> */}
+     <Testimonials/>
+     <Clients/>
      <BlogSection/>
     </>
   )
