@@ -45,8 +45,7 @@ const ContactAddress = () => {
           </div>
           <div className="contact-infor">
             <h6 className="title_no_a_24">Call Us</h6>
-            <a href="tel:+2348067864098">+2348067864098</a>
-            <a href="tel:+2348067864098">+2348067864098</a>
+            <a href="tel:+2349088888313">+2349088888313</a>
           </div>
         </div>
         {/*-============spacing==========-*/}

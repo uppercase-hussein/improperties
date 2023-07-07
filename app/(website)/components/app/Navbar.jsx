@@ -18,9 +18,9 @@ const Navbar = () => {
                 <i aria-hidden="false" className="far fa-envelope" /> <span>
                   <a className='text-white' href="mailto:improperties@gmail.com">improperties@gmail.com</a> </span> </div>
               <div className="call">
-                <a href="tel:+2348067864098" style={{backgroundColor:"#404040"}}>
+                <a href="tel:+2349088888313" style={{backgroundColor:"#404040"}}>
                   <small><i className='fa fa-phone' style={{transform:"rotate(90deg)"}}/> </small>
-                  +2348067864098</a>
+                  +2349088888313</a>
               </div>
             </div>
           </div>
