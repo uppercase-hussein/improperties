@@ -24,7 +24,7 @@ const FooterCTA = () => {
         </div>
         <div className="content">
           {/* <h6 className="tite">Need Help?</h6> */}
-          <div className="title_20"><a href="tel:+2348067864098">+2348067864098</a></div>
+          <div className="title_20"><a href="tel:+2349088888313">+2349088888313</a></div>
         </div>
       </div>
     </div>

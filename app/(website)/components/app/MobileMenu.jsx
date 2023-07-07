@@ -29,8 +29,8 @@ const MobileMenu = () => {
     </div>
     <div className="mobile-header-info-wrap">
       <div className="single-mobile-header-info">
-        <a href="tel:9806071234" className="cnt">
-          <i className="fi-rs-headphones" />+2348067864098 </a>
+        <a href="tel:+2349088888313" className="cnt">
+          <i className="fi-rs-headphones" />+2349088888313 </a>
       </div>
       <div className="single-mobile-header-info cont_over">
         <a href="mailto:improperties@gmail.com" className="cnt">
