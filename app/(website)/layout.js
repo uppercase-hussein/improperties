@@ -123,6 +123,7 @@ export default function RootLayout({ children }) {
           media="all"
         />
         {/* Icon Styles */}
+        <link rel="icon" href="/favicon.ico" />
       </head>
       {/* mobile_menu_box-visible */}
       <body

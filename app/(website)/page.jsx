@@ -24,8 +24,8 @@ export default async function HomePage() {
   return (
     <>
     <Slider slides={slides}/>
-     <About/>
      <PropertiesSection/>
+     <About/>
      <Services/>
      <Benefits/>
      {/* <InterestForm/> */}
