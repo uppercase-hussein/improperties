@@ -24,7 +24,7 @@ const Services = () => {
           <div className="service_box type_three hover_1_get">
           <Link href="/services#land-sale" className="img_bx">
               <div className="image trans hover_1">
-                <img src="assets/images/service/service_land.jpg" className="img-fluid" alt="service" />
+                <img src="assets/images/service/service_land2.JPG" className="img-fluid" alt="service" />
                 <div className="oh ho_1" />
                 <div className="oh ho_2" />
                 <div className="oh ho_3" />

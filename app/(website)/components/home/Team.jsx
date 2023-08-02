@@ -62,7 +62,7 @@ const Team = () => {
         <div className="pd_bottom_40" />
         {/*-============spacing==========-*/}
         <div className="row">
-          <Slider {...teamSettings}>
+          {/* <Slider {...teamSettings}> */}
             <div className="col-lg-3 col-md-6 col-sm-6 col-xs-12">
               <div className="team_box type_two">
                 <div className="team_box_inner">
@@ -88,7 +88,7 @@ const Team = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            {/* <div className="col-lg-3 col-md-6 col-sm-6 col-xs-12">
               <div className="team_box type_two">
                 <div className="team_box_inner">
                   <div className="contnet">
@@ -162,8 +162,8 @@ const Team = () => {
                   </div>
                 </div>
               </div>
-            </div>
-          </Slider>
+            </div> */}
+          {/* </Slider> */}
         </div>
       </div>
       {/*-============spacing==========-*/}

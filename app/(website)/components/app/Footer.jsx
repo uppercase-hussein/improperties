@@ -209,7 +209,7 @@ const Footer = async () => {
                     <img src="assets/images/shield.svg" className="img-fluid" alt="img" />
                   </div>
                   <a className="links color_white" href="#">
-                    Copyright {new Date().getFullYear()}, IM Properties LTD. All Rights Reserved
+                    Copyright {new Date().getFullYear()}, IM Intercontinental Ltd. RC: 1761229 All Rights Reserved
                   </a>
                 </div>
               </li>

@@ -86,7 +86,7 @@ const Navbar = () => {
                       <li>
                         <a
                           className="m_icon"
-                          href="https://wa.me/2349039951233?text=I'm%20coming%20from%20your%20website"
+                          href="https://wa.me/2347067394870?text=I'm%20coming%20from%20your%20website"
                         >
                           <i className="fab fa-whatsapp" />
                         </a>

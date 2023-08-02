@@ -32,7 +32,7 @@ export default async function HomePage() {
      <Team/>
      <FactVideo/>
      <Testimonials/>
-     <Clients/>
+     {/* <Clients/> */}
      <BlogSection/>
     </>
   )

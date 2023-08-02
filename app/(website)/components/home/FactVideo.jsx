@@ -12,7 +12,7 @@ const FactVideo = () => {
         <div className="image one">
           <img src="assets/images/team/improp_team.webp" alt="img" className="img-fluid" />
           <div className="video_box video-inner text-center">
-            <a href="https://youtu.be/RN81h85V6D4" className="lightbox-image">
+            <a href="https://www.youtube.com/embed/KNC-VrgCvUI" className="lightbox-image">
               <i className="fi-rr-play" />
             </a></div>
         </div>
