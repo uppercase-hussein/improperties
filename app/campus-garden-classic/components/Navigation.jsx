@@ -14,7 +14,7 @@ const Navigation = () => {
           <span className="icon-bar" />
         </button>
         <div className="navbar-brand nav" id="brand">
-          <Link href="#"><img src="assets/images/improperties_logo.png" alt="brand" /></Link>
+          <Link href="#"><img id='logo_img' src="assets/images/improperties_logo.png" alt="brand" /></Link>
         </div>
       </div>
     </header>{/* /.navbar */}

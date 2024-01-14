@@ -1413,4 +1413,7 @@ input[type="text"]:focus, input[type="text"]:active, input[type="email"]:focus, 
     display: block;
     height: 250px;
   }
+  #logo_img {
+    height: 50px;
+  }
 }
