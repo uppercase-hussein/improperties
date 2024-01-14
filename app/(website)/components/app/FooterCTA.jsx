@@ -5,7 +5,7 @@ const FooterCTA = () => {
   return (
    <section className="position-relative z_99 mr_bottom_minus_80">
   <div className="container">
-    <div className="call_to_action style_one">
+    <div className="call_to_action style_one bg-dark">
       <div className="section_title type_one">
         <div className="title_whole">
           <h2 className="title">

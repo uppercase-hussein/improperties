@@ -7362,6 +7362,9 @@ body ul.portfolio_filter.color_two li.current, body ul.portfolio_filter.color_tw
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.bg-dark {
+  background: var(--color-set-one-2);
+}
 .call_to_action.style_one .section_title {
   width: 50.874%;
   padding: 40px 20px 40px 40px;

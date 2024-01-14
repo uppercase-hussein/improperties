@@ -89,16 +89,10 @@ const AboutDetails = () => {
         {/*-============spacing==========-*/}
         <div className="fom_tab_box custom_tabs only_tab_content">
           <ul className="nav nav-tabs links trans" role="tablist">
-            <li className="nav-item">
-              <button className="nav-link active" id="aboutuss-tabtab" data-bs-toggle="tab" data-bs-target="#aboutuss" type="button" role="tab" aria-controls="aboutuss" aria-selected="false">
-                Core Values <svg width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 11L11 1M11 1H3.5M11 1V8.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </button>
-            </li>
+           
            
             <li className="nav-item">
-              <button className="nav-link " id="vision-tabtab" data-bs-toggle="tab" data-bs-target="#vision" type="button" role="tab" aria-controls="vision" aria-selected="false">
+              <button className="nav-link active" id="vision-tabtab" data-bs-toggle="tab" data-bs-target="#vision" type="button" role="tab" aria-controls="vision" aria-selected="false">
                 Vision <svg width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1 11L11 1M11 1H3.5M11 1V8.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
@@ -108,6 +102,14 @@ const AboutDetails = () => {
             <li className="nav-item">
               <button className="nav-link " id="mission-tabtab" data-bs-toggle="tab" data-bs-target="#mission" type="button" role="tab" aria-controls="mission" aria-selected="false">
                 Mission <svg width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 11L11 1M11 1H3.5M11 1V8.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </button>
+            </li>
+
+            <li className="nav-item">
+              <button className="nav-link" id="aboutuss-tabtab" data-bs-toggle="tab" data-bs-target="#aboutuss" type="button" role="tab" aria-controls="aboutuss" aria-selected="false">
+                Core Values <svg width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1 11L11 1M11 1H3.5M11 1V8.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </button>

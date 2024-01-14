@@ -40,7 +40,7 @@ const MobileMenu = () => {
         <a href="#" className="theme_btn tp_one">Contact</a>
       </div> */}
       <div className="single-mobile-header-info">
-        <Link href="/become-an-esp" className="theme_btn">Become an ESP</Link>
+        <Link onClick={closeMenu} href="/become-an-esp" className="theme_btn">Become an ESP</Link>
       </div>
     </div>
   </nav>

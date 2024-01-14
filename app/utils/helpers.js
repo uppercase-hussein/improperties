@@ -26,3 +26,4 @@ MySwal.fire({
   allowOutsideClick: dismissable,
   backdrop:true,
 });
+

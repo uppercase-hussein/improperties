@@ -1,8 +1,9 @@
+import { displayAmount } from '@/app/utils/helpers'
 import Link from 'next/link'
 import React from 'react'
 
 const SingleProperty = ({property}) => {
-    let { name, location, slug } = property.fields
+    let { name, location, slug, price } = property.fields
     let image = property.fields.image?.fields.file.url
   return (
     <div className="portfolio-wrapper col-xl-4 col-lg-4 col-md-6 col-sm-6 portfolio_category-life portfolio_category-medical">
@@ -21,7 +22,9 @@ const SingleProperty = ({property}) => {
         <div className="content_box_in  trans">
           <h2 className="title_22">
           <Link href={`/property?title=${slug}&ref=${property.sys.id}`} rel="bookmark">{name}</Link>
+          {displayAmount(price)}
           </h2>
+
           <p> {location}</p>
           <Link href={`/property?title=${slug}&ref=${property.sys.id}`} className="lnk trans">
             <svg className="trans" width={17} height={16} viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">

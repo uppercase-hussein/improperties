@@ -112,7 +112,7 @@ const Navbar = () => {
                   <Link href="/" className="logo navbar-brand">
                     <img
                       src="assets/images/improperties_logo.png"
-                      alt="Vankine"
+                      alt="IM Properties Logo"
                       className="logo_default nav_logo"
                     />
                   </Link>

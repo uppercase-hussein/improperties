@@ -38,14 +38,14 @@ const PropertiesSection = async () => {
         <SinglePropertySec properties={properties} />
       </div>
    
-
-      <div className="theme_btn_all text-center mt-3">
+<div className="d-flex items-center justify-content-center flex-wrap">
+      <div className="theme_btn_all text-center mt-3 mx-3">
               <Link href="/our-properties" className="theme_btn rotate big">
                 See More Properties
               </Link>
             </div>
-      <InterestBtn properties={properties} text="Property interests form." className="mr-3" />
-
+      <InterestBtn properties={properties} text="Property interests form" className="mr-3" />
+      </div>
     </div>
     {/*-============spacing==========-*/}
     <div className="pd_bottom_80" />
