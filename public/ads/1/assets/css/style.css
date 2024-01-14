@@ -93,6 +93,7 @@ p {
 }
 #slider .flexslider .slides .slide img {
   display: block;
+  height: 100%;
 }
 #slider .flexslider .flex-direction-nav {
   list-style: none;
@@ -1407,5 +1408,9 @@ input[type="text"]:focus, input[type="text"]:active, input[type="email"]:focus, 
 
   .video .fluid-width-video-wrapper {
     margin-bottom: 20px !important;
+  }
+  #slider .flexslider .slides .slide img {
+    display: block;
+    height: 250px;
   }
 }

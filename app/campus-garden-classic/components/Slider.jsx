@@ -1,3 +1,4 @@
+"use client"
 import { displayAmount } from '@/app/utils/helpers'
 import React from 'react'
 
@@ -7,9 +8,9 @@ const Slider = () => {
   <div className="flexslider loading">
     <div id="loading-icon"><i className="fa fa-cog fa-spin" /></div>
     <ul className="slides">
-      <li className="slide slide-has-parallax"><img src="ads/1/assets/img/slide-01.jpg" className="parallax-bg" alt /></li>
-      <li className="slide slide-has-parallax"><img src="ads/1/assets/img/slide-02.jpg" className="parallax-bg" alt /></li>
-      <li className="slide slide-has-parallax"><img src="ads/1/assets/img/slide-03.jpg" className="parallax-bg" alt /></li>
+      <li className="slide slide-has-parallax"><img src="ads/1/assets/img/slide-01.jpg" className="parallax-bg" alt="" /></li>
+      <li className="slide slide-has-parallax"><img src="ads/1/assets/img/slide-02.jpg" className="parallax-bg" alt="" /></li>
+      <li className="slide slide-has-parallax"><img src="ads/1/assets/img/slide-03.jpg" className="parallax-bg" alt="" /></li>
     </ul>{/* /.slides */}
   </div>{/* /.flexslider */}
   <div className="slider-banner">
